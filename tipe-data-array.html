@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array Javascript</title>
+</head>
+<body>
+    <script>
+        const arrayKosong = [];
+        let arrayNama = ["Kadek", " Frama"];
+
+        const names = [];
+        names.push("Kadek");
+        names.push("Frama Danamastyana");
+
+        document.writeln(arrayNama);
+        document.writeln("<br>");
+        document.writeln(names);
+
+        names[1] = "345";
+        
+        delete names[1];
+
+        console.table(arrayNama);
+        console.table(names);
+
+        names[1] = "Bangkit 2021";
+        names.push(1,2,3,4,5,6,7,8,9,10);
+
+        console.info(names[1]);
+
+        names.push(["array1", "array2", "array3", "array4", "array5"]);
+        names.push("baru array");
+        names.push("array Tetap semangat");
+        names.push("array berjuang");
+        names.push(["Array pantang menyerah"]);
+        
+        console.table(names);
+
+        console.info(names.length);
+
+
+
+    </script>
+</body>
+</html>
