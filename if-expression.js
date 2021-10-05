@@ -9,7 +9,7 @@ const examValue =  100;
     }else if(examValue > 60){
         document.writeln("Mantap djiwa, tetap semangat !!!");
     }else{
-        document.writeln("Tetap berjuang !!!");
+        document.writeln("Try Again!, Tetap berjuang !!!");
     };
 
     //SEMANGAT !!!
