@@ -8,26 +8,26 @@
 </head>
 <body>
     <script>
-        const arrayKosong = [];
+        const arrayKosong = []; //membuaat array kosong
         let arrayNama = ["Kadek", " Frama"];
 
-        const names = [];
-        names.push("Kadek");
+        const names = [];       //array kosong
+        names.push("Kadek");    //menambahkan data ke dalam array names.
         names.push("Frama Danamastyana");
 
-        document.writeln(arrayNama);
+        document.writeln(arrayNama); //menampilkan data arrayNama pada halaman depan.
         document.writeln("<br>");
         document.writeln(names);
 
         names[1] = "345";
         
-        delete names[1];
+        delete names[1];        // menghapus data array dengan index 1.
 
-        console.table(arrayNama);
+        console.table(arrayNama);// menampilkan data table data arrayNama pada console.
         console.table(names);
 
-        names[1] = "Bangkit 2021";
-        names.push(1,2,3,4,5,6,7,8,9,10);
+        names[1] = "Bangkit 2021";  // mengubah data pada array names dengan index 1 menjadi "Bangkit 2021".
+        names.push(1,2,3,4,5,6,7,8,9,10);// menambahkan data pada array names.
 
         console.info(names[1]);
 
