@@ -15,3 +15,12 @@ const gabung = confirm("Apakah Anda yakin ingin bergabung? :)"); //fungsi confir
     const names = prompt("Siapa Nama Anda?");
     alert(`Hallo ${names}, Selamat Bergabung yaa :)`);
     document.writeln(`<center><h1> Selamat Bergabung ${names} :)</h1></center>`);
+
+
+// contoh popup confirm() dengan if expression.
+const join = confirm(`Apakah Anda Ingin Join ${names}?`);
+if(join){
+    alert("Okayy " + names);
+}else{
+    alert(`Terimakasih, Bye bye ${names}`);
+};
