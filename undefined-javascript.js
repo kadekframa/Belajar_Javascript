@@ -17,7 +17,7 @@ if(names === undefined){
 }
 
 // contoh 3
-const nama = ["Kadek", "Frama"];
+const nama = ["Kadek", "Frama","Tetap Semangat","Semangat!!!"];
 if(nama[3] === undefined){                  // sebagai contoh disini mengakses index yang tidak ada nilainya "[3]" dari variable nama, maka akan menghasilkan "Array nya Undefined".
     console.info("Array nya Undefined");
 }else{
