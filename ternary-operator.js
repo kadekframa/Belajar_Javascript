@@ -1,4 +1,4 @@
-// Ternary Operator adalah bentuk sederhana dari if statement.
+// Ternary Operator "?" adalah bentuk sederhana dari if statement.
 
 // contoh 1
 const nilai = 94;
