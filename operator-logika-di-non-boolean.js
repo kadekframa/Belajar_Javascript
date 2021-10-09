@@ -46,3 +46,4 @@ if(nama == false){
 }else{
     document.writeln("Tetap Semangat!!!");
 }
+
