@@ -11,3 +11,5 @@ for(let i=0 ; i<6; i++){
         console.info(`${i} - ${j}`);
     }
 };
+
+// contoh 2.
