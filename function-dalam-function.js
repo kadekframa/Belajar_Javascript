@@ -23,4 +23,4 @@ inner(); // error can not access inner function.
 
 // NB: Sebagai catatan bahwa untuk memanggil function yang berada di dalam function itu harus dipanggil dari dalam function tempat menyimpan functionnya.
 // Dalam hal ini sebagai contoh function inner() hanya dapat dipanggil dari dalam function outer(), karena function inner() itu berada di dalam function outer().
-// Tetap Semangat Belajar JavaScript !!! Pasti Bisa!!!
+// Tetap Semangat Belajar JavaScript !!! Pasti Bisa!!! Harus Kuat !!!
