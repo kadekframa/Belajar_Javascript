@@ -20,16 +20,33 @@ for (const name of names) {
 
 
 // contoh penggunaan function generator yang kompleks.
+
+// function dengan generator. (lazy)
 function* buatGanjil(value){
     for(let i = 1; i <= value; i++){
         if(i % 2 === 1){
+            console.info(`Yieldnya ${i}`);
             yield i;
         }
 
     }
 }
 
-const numbers = buatGanjil(100);
-for (const number of numbers) {
+// function dengan array. (eager)
+function buatGanjilArray(value){
+    const result = [];
+    for(let i = 1; i <= value; i++){
+        if(i % 2 === 1){
+            console.info(`Yieldnya ${i}`);
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+
+// menyimpan function buatGanjil() yang sudah diisi parameter ke dalam variabel numbers.
+const numbers = buatGanjilArray(10);         //menyimpan function ke dalam variabel number.
+for (const number of numbers) {         //melakukan iterasi terhadap value dari function untuk ditampilkan ke console.
     console.info(number);
 }
