@@ -10,7 +10,6 @@ function* createNames(){
     yield "Danamastyana";
 
 };
-
 const names = createNames();
 for (const name of names) {
     console.info(name);
@@ -46,7 +45,20 @@ function buatGanjilArray(value){
 
 
 // menyimpan function buatGanjil() yang sudah diisi parameter ke dalam variabel numbers.
-const numbers = buatGanjilArray(10);         //menyimpan function ke dalam variabel number.
-for (const number of numbers) {         //melakukan iterasi terhadap value dari function untuk ditampilkan ke console.
-    console.info(number);
+const numbers = buatGanjil(10);        //menyimpan function ke dalam variabel number.
+for (const number of numbers) {             //melakukan iterasi terhadap value dari function untuk ditampilkan ke console.
+    document.writeln(`<p></p>`);
+    document.writeln(number);
 }
+
+
+
+
+
+
+
+
+
+
+
+// Kesimpulan: function generator itu bersifat lazy.
