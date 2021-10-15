@@ -4,7 +4,6 @@
 // Data di global scope bisa diakses dari local scope, namun data di local scope hanya bisa di akses di local scope tersebut atau di scope local dibawahnya (dalam kasus function dalam fucntion).
 
 // Contoh penggunaan scope.
-
 // global scope.
 let counter = 0;
 
@@ -18,14 +17,31 @@ function other(){
     //local scope other.
 };
 
-
-
 hitMe();
 hitMe();
 hitMe();
 
 document.writeln(`<p>${counter}</p>`);
 document.writeln(counter);
+
+
+
+// Contoh penggunaan Local Scope.
+function first(){
+    //local scope first.
+    let firstVariable = "first";
+}
+
+function second(){
+    //local scope second.
+    let secondVariable = "second";
+}
+
+first();
+second();
+
+console.info(firstVariable);        // error
+console.info(secondVariable);       // error
 
 
 
