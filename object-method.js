@@ -1,0 +1,2 @@
+// Object Method di JavaScript.
+//
