@@ -6,10 +6,10 @@
 const person = {
     firstName: "Kadek",
     lastName: "Frama",
-    get fullName(){
+    get fullName(){                                     // membua getter di object person.
         return `${this.firstName} ${this.lastName}`;
     },
-    set fullName(value){
+    set fullName(value){                                // membuat setter di object person.
         const array = value.split(" ");
         this.firstName = array[0];
         this.lastName = array[1];
