@@ -8,9 +8,9 @@
 // contoh penggunaan function rest parameter.
 //membuat function dengan rest parameter
 function sum(name, ...data){
-    let total = 0;
+    let total = [];
     for (const item of data) {
-        total += item;
+        total.push(item);
     }
     document.writeln(`Total ${name} is ${total}`);
 };
@@ -21,7 +21,7 @@ sum("Tetap Semangat", ...[12,13,14,15,16,17,18,19]); // tambahkan spread syntax 
 document.writeln("<br>");
 document.writeln("<br>");
 
-sum("Mango", 1,2,3,4,5,6,7,8);
+sum("Mango", 1,2,3,4,5,6,7,8,24);
 
 document.writeln("<br>");
 document.writeln("<br>");
