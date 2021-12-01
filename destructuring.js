@@ -142,3 +142,18 @@ console.info(yangLain);
     console.info(middleName);
     console.info(lastName);
 }
+
+
+{
+    const names = {
+        firstName: "Tetap Semangat",
+        lastName: "Javascript!"
+    }
+
+    const {firstName, middleName = "Berlatih", lastName} = names;     // contoh penerapan destructuring object dengan menggunakan default value (default value terletak pada middleName).
+
+    console.info("");
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+}
