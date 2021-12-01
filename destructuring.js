@@ -96,14 +96,16 @@ console.info(yangLain);
 // Destructuring tidak hanya bisa dilakukan divariabel, tapi juga bisa dilakukan di function parameter.
 // Hal ini membuat kita mudah ketika ingin mengambil nested data dalam array atau object dalam function.
 
-function displayPerson({firstName, middleName, lastName}){      // contoh penerapan destructuring pada function parameter.
-    console.info("");
-    console.info(firstName);
-    console.info(middleName);
-    console.info(lastName);
-}
-
 {
+    function displayPerson({firstName, middleName, lastName}){      // contoh penerapan destructuring object pada function parameter.
+        console.info("");
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info("");
+    }
+
+
     const seseorang = {
         firstName: "Made",
         middleName: "Barbar",
@@ -112,3 +114,20 @@ function displayPerson({firstName, middleName, lastName}){      // contoh penera
 
     displayPerson(seseorang);
 }
+
+
+
+{
+    function sum([first, second]){      // contoh penerapan destructuring array pada function berparameter.
+        return first + second;
+    }
+
+    console.info(`Hasil penjumlahannya adalah: ${sum([10, 10])}`);      // memanggil function sum berisi parameter berupa array.
+
+    arrayContoh = [3, 4];
+    console.info("Hasil Penjumlahannya Adalah: " + sum(arrayContoh));   // memanggil function sum berisi parameter berupa array.
+
+}
+
+
+
