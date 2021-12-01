@@ -58,10 +58,57 @@ const personDestructuring = {
     channel: "Programmer Pantang Menyerah"
 };
 
-const {namaAnakKeberapa, namaPanggilan, address, ...lainnya} = personDestructuring;     // penerapan destructuring dalam mengambil data pada sebuah object.
+let {namaAnakKeberapa, namaPanggilan, address, ...lainnya} = personDestructuring;     // penerapan destructuring dalam mengambil data pada sebuah object.
 
 console.info("");
 console.info(namaAnakKeberapa);
 console.info(namaPanggilan);
 console.info(address);
 console.info(lainnya);
+
+
+// Contoh cara mengambil data dengan menggunakan destructuring pada nested object.
+const personNested = {
+    namaBali: "Wayan",
+    namaPanggilnya: "Semangat",
+    alamat: {
+        street: "Jalan Meraih Impian",
+        city: "Bali",
+        country: "Indonesia"
+    },
+    kegemaran: "programming Javascript",
+    channelnya: "Programmer Meraih Impian"
+};
+
+const {namaBali, namaPanggilnya, alamat: {street, city, country}, ...yangLain} = personNested;      // penerapan destructuring nested object. Yaitu nested yang terletah pada property alamat.
+
+console.info("");
+console.info(namaBali);
+console.info(namaPanggilnya);
+console.info(street);
+console.info(city);
+console.info(country);
+console.info(yangLain);
+
+
+
+// Destructuring Function Parameter.
+// Destructuring tidak hanya bisa dilakukan divariabel, tapi juga bisa dilakukan di function parameter.
+// Hal ini membuat kita mudah ketika ingin mengambil nested data dalam array atau object dalam function.
+
+function displayPerson({firstName, middleName, lastName}){      // contoh penerapan destructuring pada function parameter.
+    console.info("");
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+}
+
+{
+    const seseorang = {
+        firstName: "Made",
+        middleName: "Barbar",
+        lastName: "Prejani"
+    };
+
+    displayPerson(seseorang);
+}
