@@ -157,3 +157,27 @@ console.info(yangLain);
     console.info(middleName);
     console.info(lastName);
 }
+
+
+
+// Menggunakan Nama Variable lain.
+// Saat melakukan destructuring di Array, kita bisa dengan mudah membuat nama variable sesuka kita.
+// Namun pada saat melakukan destructuring, kita harus membuat nama variable sama dengan nama property.
+// Kita juga bisa menggunakan nama variable lain saat melakukan destructuring object jika kita mau.
+{
+    const person = {
+        firstName: "Kadek",
+        middleName: "Tetap",
+        lastName: "Semangat"
+    };
+
+    let {firstName: namaDepan,
+        middleName: namaTengah = "Frama",
+        lastName: namaBelakang} = person;
+
+    console.info("");
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(namaBelakang);
+
+}
