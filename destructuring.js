@@ -95,7 +95,6 @@ console.info(yangLain);
 // Destructuring Function Parameter.
 // Destructuring tidak hanya bisa dilakukan divariabel, tapi juga bisa dilakukan di function parameter.
 // Hal ini membuat kita mudah ketika ingin mengambil nested data dalam array atau object dalam function.
-
 {
     function displayPerson({firstName, middleName, lastName}){      // contoh penerapan destructuring object pada function parameter.
         console.info("");
@@ -105,7 +104,6 @@ console.info(yangLain);
         console.info("");
     }
 
-
     const seseorang = {
         firstName: "Made",
         middleName: "Barbar",
@@ -114,7 +112,6 @@ console.info(yangLain);
 
     displayPerson(seseorang);
 }
-
 
 
 {
@@ -131,3 +128,17 @@ console.info(yangLain);
 
 
 
+// Default value pada destructuring.
+// Yang paling menarik di destructuring adalah, kita bisa menambahkan default value.
+// Jadi misal kita melakukan destructuring terhadap array, ternyata tidak ada datanya, maka kita bisa menambahkan default value.
+// Begitu juga pada object, jika ternyata property nya tidak ada, maka kita bisa menambahkan default value.
+
+{
+    const names = ["Kadek", "Frama"];
+    const [firstName, middleName, lastName="Danamastyana"] = names;     // contoh penerapan destructuring array dengan menggunakan default value.
+
+    console.info("");
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+}
