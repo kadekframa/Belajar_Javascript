@@ -9,6 +9,6 @@
     lastName: "Danamastyana"
  };
 
- for(const property in person){
-     document.writeln(`<p>Property ${property} : ${person[property]}</p>`);
+ for(const property in person){         // Contoh penggunaan for in pada JavaScript.
+     document.writeln(`<p>Property ${property} : ${person[property]}</p>`);         // ${property} digunakan untuk mengakses data property pada object person. Sedangkan ${person[property]} digunakan untuk mengkases value dari property tersebut.
  };
