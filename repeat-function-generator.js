@@ -16,7 +16,7 @@ const names = createNames();
 
 console.info(names[0]);             // UNDEFINED. Data generator hanya bisa di iterasi, tidak bisa diakses berupa index atau bahkan diubah data nya itu tidak bisa.
 
-for (const name of names) {
+for (const name of names) {         // menggunakan for of untuk melakukan iterasi data generator.
     console.log(name);
 }
 
@@ -25,12 +25,22 @@ for (const name of names) {
 function* buatGanjil(value){            // contoh penerapan function generator untuk mencari angka ganjil.
     for(let i = 1; i <= value; i++){
         if(i % 2 === 1){
-            yield i;
+            yield i;                    // Menggunakan yield untuk mengambalikkan data iterasi nya.
         }
     }
 }
 
+console.info(``);
 const angkaGanjil = buatGanjil(36);
-for (const angka of angkaGanjil) {
-    console.info(angka);
+
+for (const angka of angkaGanjil) {      // Menggunakan for of untuk melakukan iterasi terhadap function buatGanjil();
+    console.info(`Angka Ganjil: ${angka}`);
 }
+
+
+console.info(angkaGanjil.next().value);     // fungsi next() dapat digunakan untuk mengambil data tertentu dari function generator. Jadi semakin banyak dilakukan (angkaGanjil.next().value), maka jumlah data iterasi akan ditampilkan sesuai dengan banyaknya jumlah function next() disebutkan.
+
+
+
+// NB: Funtion generator digunakan untuk membuat data yang bersifat generator atau dapat di iterasi. Namun pada function generator ini tidak dapat mengakses data berdasarkan index atau mengubah data nya berdasarkan index.
+// Harus Tetap Semangat Dalam Berlatih !!! , Kembali menjadi lebih Kuat !!!, Semangat...!!!!!
