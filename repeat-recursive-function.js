@@ -26,5 +26,10 @@ function factorialRecursive(values){            // contoh penyelesaian kasus fak
 
 document.writeln(`<p>${factorialRecursive(5)}</p>`);
 
+factorialRecursive(5);
+// 5 * factorialRecursive(4)
+// 5 * 4 * factorialRecursive(3)
+// 5 * 4 * 3 * factorialRecursive(2)
+// 5 * 4 * 3 * 2 * factorialRecursive(1)
 
 // NB: Harus Tetap Semangat Berlatih !!!, Kembali menjadi lebih Kuat !!!, Semangat !!!
